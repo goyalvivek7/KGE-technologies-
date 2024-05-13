@@ -1,0 +1,175 @@
+@media only screen and (max-width: 1280px) {
+	.my-70 {
+	    margin-block: 50px;
+	}
+	.py-70 {
+	    padding-block: 50px;
+	}
+	.pt-70 {
+	    padding-block-start: 50px;
+	}
+	.pb-70 {
+	    padding-block-end: 50px;
+	}
+	.py-40 {
+	    padding-block: 20px;
+	}
+	.pt-40 {
+	    padding-block-start: 20px;
+	}
+	.pb-40 {
+	    padding-block-end: 20px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.my-70 {
+	    margin-block: 30px;
+	}
+	.py-70 {
+	    padding-block: 30px;
+	}
+	.pt-70 {
+	    padding-block-start: 30px;
+	}
+	.pb-70 {
+	    padding-block-end: 30px;
+	}
+	.py-40 {
+	    padding-block: 20px;
+	}
+	.pt-40 {
+	    padding-block-start: 20px;
+	}
+	.pb-40 {
+	    padding-block-end: 20px;
+	}
+	.heading-main {
+	    font-size: 32px;
+	    line-height: 40px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.heading-main {
+	    font-size: 30px;
+	    line-height: normal;
+	}
+	form#msform {
+		padding-block-start: 0;
+	}
+	.cta-content a {
+	    display: block;
+	}
+	.certificate-section #msform {
+	    padding-block-start: 30px;
+	    padding-block-end: 0;
+	}
+	.thankyou-section-inner h2 {
+	    text-align: center;
+	}
+	.thankyou-section-inner .thankyou-section-left {
+	    text-align: center !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.thankyou-section-inner .thankyou-section-left {
+	    padding: 30px;
+	}
+	.fs-title {
+	    font-size: 24px;
+	    margin-block-end: 40px;
+	}
+	.desc {
+	    font-size: 16px;
+	    line-height: normal;
+	    margin-block-start: 10px;
+	}
+	.header-menu nav ul li:not(:last-child) a {
+	    margin-inline-end: 40px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	input.next.action-button.site-btn.d-block.text-center.float-none.mx-auto {
+	    float: right !important;
+	}
+	header .header-menu nav {
+		display: none;
+	}
+	header button.mobile-toggle-btn {
+		display: block;
+	}
+	header .logo a img {
+	    height: 40px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#progressbar li {
+	    font-size: 12px;
+	}
+	#progressbar li.active:before {
+	    width: 40px;
+	    height: 40px;
+	}
+	#progressbar li:before {
+	    width: 40px;
+	    height: 40px;
+	    top: -50px;
+	    left: calc(50% - 20px);
+	}
+	#progressbar li:after {
+		top: -30px;
+	}
+	#progressbar {
+		padding-block-start: 80px !important;
+	}
+	#msform input, #msform textarea, #msform select {
+	    margin-bottom: 15px;
+	}
+	.site-btn {
+	    padding: 14px 42px;
+	}
+}
+@media only screen and (max-width: 375px) {
+    #progressbar li {
+        font-size: 10px;
+    }
+    .heading-main {
+	    font-size: 26px;
+	    line-height: normal;
+	}
+	.faq-section-inner .accordion-button {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.faq-section-inner .accordion-item {
+	    border: none;
+	    padding-block: 15px;
+	}
+	.site-btn {
+	    padding: 14px 20px;
+	}
+}
+@media only screen and (max-width: 325px) {
+    #msform .action-button-previous {
+	    width: 140px;
+	}
+	#msform .action-button {
+	    width: 140px;
+	}
+	.faq-section .cta-section {
+	    padding: 32px 10px;
+	}
+	.cta-btn-grp .site-btn {
+		font-size: 14px;
+	}
+	#progressbar li {
+	    font-size: 8px;
+	}
+	.heading-main {
+	    font-size: 24px;
+	    line-height: normal;
+	}
+	.fs-title {
+	    font-size: 20px;
+	    margin-block-end: 30px;
+	}
+}

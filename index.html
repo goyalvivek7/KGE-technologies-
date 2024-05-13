@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KGE Technologies Pvt Ltd| Internship Request Form</title>
+    <!-- Favicon Icon -->
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/png"> -->
+    <!-- ======== Font Awesome CDN ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- ======== font ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- ======== Bootstrap 5 ===== -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- ======== style css ===== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ======== responsive css ===== -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="#"><img src="img/kge-logo.svg" alt="kge-logo"></a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-menu">
+                        <nav>
+                            <ul class="list-unstyled d-flex justify-content-end align-items-center">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#" class="site-btn">Download</a></li>
+                            </ul>
+                        </nav>
+                        <button class="mobile-toggle-btn"><i class="fa fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-element" id="mySidenav" style="width: 0px;">
+            <div class="menu">
+                <nav>
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="site-btn">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="close-btn mobile-toggle-btn active"><i class="fa fa-close"></i></button>
+        </div>
+    </header>
+
+    <section class="internship-form-section py-70">
+        <div class="container">
+            <h1 class="divider heading-main">Internship Request at KGE Technologies Pvt Ltd</h1>
+            <div class="py-70">
+                <form id="msform" class="pt-70">
+                    <!-- progressbar -->
+                    <ul id="progressbar" class="pb-70">
+                        <li class="active" id="personalDetails"><span>Personal Details</span></li>
+                        <li id="educationalDetails"><span>Educational Details</span></li>
+                        <li id="internshipInterested"><span>Internship<br>Interested Field</span></li>
+                        <li id="internshipOption"><span>Internship Option</span></li>
+                        <li id="References"><span>References</span></li>
+                        <li id="Submission"><span>Submission</span></li>
+                    </ul>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">Personal Details:</h2>
+                            <div class="row pb-40">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels" for="fname">First Name <span>*</span></label>
+                                        <input type="text" name="fname" placeholder="First Name" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Last Name <span>*</span></label>
+                                        <input type="text" name="lname" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Email <span>*</span></label>
+                                        <input type="email" name="email" placeholder="Enter your email" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Contact Number <span>*</span></label>
+                                        <div class="phone-field">
+                                            <input type="text" name="mobilenumber" placeholder="Mobile Number" required />
+                                            <div class="country-code"><span><img src="img/flag.png" alt="flag"></span><span>+91</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Whatsapp</label>
+                                        <div class="phone-field">
+                                            <input type="text" name="whatsapp" placeholder="Whatsapp Number" />
+                                            <div class="country-code"><span><img src="img/flag.png" alt="flag"></span><span>+91</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Country <span>*</span></label>
+                                        <input type="text" name="country" placeholder="Enter Country" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">City <span>*</span></label>
+                                        <input type="text" name="city" placeholder="Enter City" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Zip Code <span>*</span></label>
+                                        <input type="text" name="zipCode" placeholder="Zip Code" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Gender<span>*</span></label>
+                                        <select required>
+                                            <option>Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="next" class="next action-button site-btn" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">Educational Details:</h2>
+                            <div class="row pb-40">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Current Degree & Branch<span>*</span></label>
+                                        <input type="text" name="degree" placeholder="Your Recent Degree and Branch" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Passed Out <span>*</span></label>
+                                        <input type="text" name="passedOut" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="next" class="next action-button site-btn" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">Internship interested Field:</h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="fieldlabels mb-4">Internship Looking For<span>*</span></label>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="netMVC" name="netMVC" value="netMVC">
+                                        <label for="netMVC" class="fieldlabels">.Net MVC</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="angular" name="angular" value="angular">
+                                        <label for="angular" class="fieldlabels">Angular</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="bbamba" name="bbamba" value="bbamba">
+                                        <label for="bbamba" class="fieldlabels">BBA/MBA</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="businessDevelopment" name="businessDevelopment" value="businessDevelopment">
+                                        <label for="businessDevelopment" class="fieldlabels">Business Development</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="digitalMarketing" name="digitalMarketing" value="digitalMarketing">
+                                        <label for="digitalMarketing" class="fieldlabels">Digital Marketing</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="finance" name="finance" value="finance">
+                                        <label for="finance" class="fieldlabels">Finance</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="flutterAndroidIOS" name="flutterAndroidIOS" value="flutterAndroidIOS">
+                                        <label for="flutterAndroidIOS" class="fieldlabels">Flutter/Android/IOS</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="hr" name="hr" value="hr">
+                                        <label for="hr" class="fieldlabels">HR</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="hardware" name="hardware" value="hardware">
+                                        <label for="hardware" class="fieldlabels">Hardware</label>
+                                    </div>
+                                </div><div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="htmlUI" name="htmlUI" value="htmlUI">
+                                        <label for="htmlUI" class="fieldlabels">Html UI</label>
+                                    </div>
+                                </div><div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="IOT" name="IOT" value="IOT">
+                                        <label for="IOT" class="fieldlabels">IOT</label>
+                                    </div>
+                                </div><div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="java" name="java" value="java">
+                                        <label for="java" class="fieldlabels">Java</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="laravel" name="laravel" value="laravel">
+                                        <label for="laravel" class="fieldlabels">Laravel</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="legalLawFirm" name="legalLawFirm" value="legalLawFirm">
+                                        <label for="legalLawFirm" class="fieldlabels">Legal / Law Firm</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="marketing" name="marketing" value="marketing">
+                                        <label for="marketing" class="fieldlabels">Marketing</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="networking" name="networking" value="networking">
+                                        <label for="networking" class="fieldlabels">Networking</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="photoshop" name="photoshop" value="photoshop">
+                                        <label for="photoshop" class="fieldlabels">Photoshop</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="php" name="php" value="php">
+                                        <label for="php" class="fieldlabels">Php</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="projectManager" name="projectManager" value="projectManager">
+                                        <label for="projectManager" class="fieldlabels">Project Manager</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="python" name="python" value="python">
+                                        <label for="python" class="fieldlabels">Python</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="react" name="react" value="react">
+                                        <label for="react" class="fieldlabels">React</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="sql" name="sql" value="sql">
+                                        <label for="sql" class="fieldlabels">SQL - Pl/Sql Oracle/MsSql</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="sales" name="sales" value="sales">
+                                        <label for="sales" class="fieldlabels">Sales</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="softwareDevelopment" name="softwareDevelopment" value="softwareDevelopment">
+                                        <label for="softwareDevelopment" class="fieldlabels">Software Development</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="testing" name="testing" value="testing">
+                                        <label for="testing" class="fieldlabels">Testing</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="uiDesigner" name="uiDesigner" value="uiDesigner">
+                                        <label for="uiDesigner" class="fieldlabels">UI Designer (Figma, etc)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="webDevelopment" name="webDevelopment" value="webDevelopment">
+                                        <label for="webDevelopment" class="fieldlabels">Web Development</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="other" name="other" value="other">
+                                        <label for="other" class="fieldlabels">Others</label>
+                                    </div>
+                                    <div class="input-field radio-field">
+                                        <input type="text" name="other" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-70">
+                                <div class="col-12">
+                                    <h2 class="fs-title mb-3">Knowledge Requirement</h2>
+                                    <label class="fieldlabels">You are comfortable working on Real-time Tasks from Day on the Above chosen Option, as we don't give training or coaching like a training institute or coaching center.</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="next" class="next action-button site-btn" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">Internship Option:</h2>
+                            <div class="fs-title-2">
+                                <h4>Please Read the Complete details below and Choose your option</h4>
+                                <p>We charge a one time fee of <b>1500/-INR for Indian Students and 50USD for International Students to offer Internship,</b> this is been made a mandataory as we see 90% of the Candidates just receive offer and dont join or abscond in between without even deliver what is expected. Dont worry you will get the completion letter always.</p>
+                            </div>
+                            <div class="fs-title-3 pb-40">
+                                <h5>What you get</h5>
+                                <ul class="ps-3">
+                                    <li>Offer of Internship in Company letter Head</li>
+                                    <li>Internship Completion in Company Letter head</li>
+                                    <li>Linkedin Recommendation</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="fieldlabels mb-4">I am Not Comfortable with Above Conditions <span>*</span></label>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="cantpay" name="pay" value="cantpay">
+                                        <label for="cantpay" class="fieldlabels">I Cannot Pay</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="input-field radio-field">
+                                        <input type="radio" id="canpay" name="pay" value="canpay">
+                                        <label for="canpay" class="fieldlabels">I Can Pay and take Internship</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="fieldlabels mb-4">Internship Duration <span>*</span></label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-field radio-field justify-content-between">
+                                        <div>
+                                            <input type="radio" id="oneMonth" name="month" value="oneMonth">
+                                            <label for="oneMonth" class="fieldlabels">1 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="twoMonth" name="month" value="twoMonth">
+                                            <label for="twoMonth" class="fieldlabels">2 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="threeMonth" name="month" value="threeMonth">
+                                            <label for="threeMonth" class="fieldlabels">3 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="fourMonth" name="month" value="fourMonth">
+                                            <label for="fourMonth" class="fieldlabels">4 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="fiveMonth" name="month" value="fiveMonth">
+                                            <label for="fiveMonth" class="fieldlabels">5 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="sixMonth" name="month" value="sixMonth">
+                                            <label for="sixMonth" class="fieldlabels">6 Month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="otherMonth" name="month" value="otherMonth">
+                                            <label for="otherMonth" class="fieldlabels">Other</label>
+                                            <div class="input-field radio-field">
+                                                <input type="text" name="other" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-70">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Tentative Internship Start Date<span>*</span></label>
+                                        <input type="date" name="date" placeholder="" value="" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="next" class="next action-button site-btn" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">References:</h2>
+                            <div class="row pb-40">
+                                <div class="col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">How You know about the Internship in KGE Technologies Pvt Ltd <span>*</span></label>
+                                        <input type="text" name="about" placeholder="" value="" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="fs-title">Refer Your Circle:</h2>
+                            <div class="row pb-40">
+                                <div class="col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Please do provide their Email Address Or Mobile Number, each line 1 Contact</label>
+                                        <textarea rows="6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="next" class="next action-button site-btn" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <h2 class="fs-title">Submission:</h2>
+                            <div class="row pb-40">
+                                <div class="col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Terms and Conditions <span>*</span></label>
+                                        <textarea rows="5" class="mb-3">I Agree, that KGE Technologies Pvt Ltd contact me via Email, Call, SMS, and WhatsApp to discuss my Form Submission for the Internship</textarea>
+                                        <div>
+                                            <input type="checkbox" id="acceptTandC" name="acceptTandC" value="acceptTandC" class="w-auto">
+                                            <label for="acceptTandC"> I accept the Terms and Conditions.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pb-40">
+                                <div class="col-sm-12">
+                                    <div class="input-field">
+                                        <label class="fieldlabels">Recaptcha</label>
+                                        <img src="img/recaptcha.png" alt="Recaptcha" class="d-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="submit" name="submit" class=" action-button site-btn d-block text-center float-none mx-auto" value="SUBMIT" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+</html>
