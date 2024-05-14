@@ -24,18 +24,16 @@
             <div class="row align-items-center">
                 <div class="col-4">
                     <div class="logo">
-                        <a href="#"><img src="img/kge-logo.svg" alt="kge-logo"></a>
+                        <a href="index.html"><img src="img/kge-logo.svg" alt="kge-logo"></a>
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="header-menu">
                         <nav>
                             <ul class="list-unstyled d-flex justify-content-end align-items-center">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#" class="site-btn">Download</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                                <li><a href="certificate.html" class="site-btn">Download</a></li>
                             </ul>
                         </nav>
                         <button class="mobile-toggle-btn"><i class="fa fa-bars"></i></button>
@@ -47,11 +45,9 @@
             <div class="menu">
                 <nav>
                     <ul class="list-unstyled d-flex align-items-center">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="site-btn">Download</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="certificate.html" class="site-btn">Download</a></li>
                     </ul>
                 </nav>
             </div>
@@ -80,26 +76,30 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels" for="fname">First Name <span>*</span></label>
-                                        <input type="text" name="fname" placeholder="First Name" required />
+                                        <input type="text" name="fname" placeholder="First Name" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Last Name <span>*</span></label>
-                                        <input type="text" name="lname" placeholder="Last Name" />
+                                        <input type="text" name="lname" placeholder="Last Name" value="" required/>
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Email <span>*</span></label>
-                                        <input type="email" name="email" placeholder="Enter your email" />
+                                        <input type="email" name="email" placeholder="Enter your email" value="" required/>
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Contact Number <span>*</span></label>
                                         <div class="phone-field">
-                                            <input type="text" name="mobilenumber" placeholder="Mobile Number" required />
+                                            <input type="text" name="mobilenumber" placeholder="Mobile Number" value="" required />
+                                            <div class="error-message"></div>
                                             <div class="country-code"><span><img src="img/flag.png" alt="flag"></span><span>+91</span></div>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@
                                     <div class="input-field">
                                         <label class="fieldlabels">Whatsapp</label>
                                         <div class="phone-field">
-                                            <input type="text" name="whatsapp" placeholder="Whatsapp Number" />
+                                            <input type="text" name="whatsapp" placeholder="Whatsapp Number"  value=""/>
                                             <div class="country-code"><span><img src="img/flag.png" alt="flag"></span><span>+91</span></div>
                                         </div>
                                     </div>
@@ -116,30 +116,34 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Country <span>*</span></label>
-                                        <input type="text" name="country" placeholder="Enter Country" required />
+                                        <input type="text" name="country" placeholder="Enter Country" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">City <span>*</span></label>
-                                        <input type="text" name="city" placeholder="Enter City" required />
+                                        <input type="text" name="city" placeholder="Enter City" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Zip Code <span>*</span></label>
-                                        <input type="text" name="zipCode" placeholder="Zip Code" required />
+                                        <input type="text" name="zipCode" placeholder="Zip Code"  value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Gender<span>*</span></label>
                                         <select required>
-                                            <option>Select Gender</option>
+                                            <option value="">Select Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                             <option value="transgender">Transgender</option>
                                         </select>
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                             </div>
@@ -153,18 +157,20 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Current Degree & Branch<span>*</span></label>
-                                        <input type="text" name="degree" placeholder="Your Recent Degree and Branch" required />
+                                        <input type="text" name="degree" placeholder="Your Recent Degree and Branch" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Passed Out <span>*</span></label>
-                                        <input type="text" name="passedOut" placeholder="Last Name" />
+                                        <input type="text" name="passedOut" placeholder="" value="" required/>
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                             </div>
                         </div> 
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="button" name="next" class="next action-button site-btn" value="Next" />
                     </fieldset>
                     <fieldset>
@@ -176,170 +182,171 @@
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="netMVC" name="netMVC" value="netMVC">
+                                        <input type="radio" id="netMVC" name="interestedField" value="netMVC">
                                         <label for="netMVC" class="fieldlabels">.Net MVC</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="angular" name="angular" value="angular">
+                                        <input type="radio" id="angular" name="interestedField" value="angular">
                                         <label for="angular" class="fieldlabels">Angular</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="bbamba" name="bbamba" value="bbamba">
+                                        <input type="radio" id="bbamba" name="interestedField" value="bbamba">
                                         <label for="bbamba" class="fieldlabels">BBA/MBA</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="businessDevelopment" name="businessDevelopment" value="businessDevelopment">
+                                        <input type="radio" id="businessDevelopment" name="interestedField" value="businessDevelopment">
                                         <label for="businessDevelopment" class="fieldlabels">Business Development</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="digitalMarketing" name="digitalMarketing" value="digitalMarketing">
+                                        <input type="radio" id="digitalMarketing" name="interestedField" value="digitalMarketing">
                                         <label for="digitalMarketing" class="fieldlabels">Digital Marketing</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="finance" name="finance" value="finance">
+                                        <input type="radio" id="finance" name="interestedField" value="finance">
                                         <label for="finance" class="fieldlabels">Finance</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="flutterAndroidIOS" name="flutterAndroidIOS" value="flutterAndroidIOS">
+                                        <input type="radio" id="flutterAndroidIOS" name="interestedField" value="flutterAndroidIOS">
                                         <label for="flutterAndroidIOS" class="fieldlabels">Flutter/Android/IOS</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="hr" name="hr" value="hr">
+                                        <input type="radio" id="hr" name="interestedField" value="hr">
                                         <label for="hr" class="fieldlabels">HR</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="hardware" name="hardware" value="hardware">
+                                        <input type="radio" id="hardware" name="interestedField" value="hardware">
                                         <label for="hardware" class="fieldlabels">Hardware</label>
                                     </div>
                                 </div><div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="htmlUI" name="htmlUI" value="htmlUI">
+                                        <input type="radio" id="htmlUI" name="interestedField" value="htmlUI">
                                         <label for="htmlUI" class="fieldlabels">Html UI</label>
                                     </div>
                                 </div><div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="IOT" name="IOT" value="IOT">
+                                        <input type="radio" id="IOT" name="interestedField" value="IOT">
                                         <label for="IOT" class="fieldlabels">IOT</label>
                                     </div>
                                 </div><div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="java" name="java" value="java">
+                                        <input type="radio" id="java" name="interestedField" value="java">
                                         <label for="java" class="fieldlabels">Java</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="laravel" name="laravel" value="laravel">
+                                        <input type="radio" id="laravel" name="interestedField" value="laravel">
                                         <label for="laravel" class="fieldlabels">Laravel</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="legalLawFirm" name="legalLawFirm" value="legalLawFirm">
+                                        <input type="radio" id="legalLawFirm" name="interestedField" value="legalLawFirm">
                                         <label for="legalLawFirm" class="fieldlabels">Legal / Law Firm</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="marketing" name="marketing" value="marketing">
+                                        <input type="radio" id="marketing" name="interestedField" value="marketing">
                                         <label for="marketing" class="fieldlabels">Marketing</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="networking" name="networking" value="networking">
+                                        <input type="radio" id="networking" name="interestedField" value="networking">
                                         <label for="networking" class="fieldlabels">Networking</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="photoshop" name="photoshop" value="photoshop">
+                                        <input type="radio" id="photoshop" name="interestedField" value="photoshop">
                                         <label for="photoshop" class="fieldlabels">Photoshop</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="php" name="php" value="php">
+                                        <input type="radio" id="php" name="interestedField" value="php">
                                         <label for="php" class="fieldlabels">Php</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="projectManager" name="projectManager" value="projectManager">
+                                        <input type="radio" id="projectManager" name="interestedField" value="projectManager">
                                         <label for="projectManager" class="fieldlabels">Project Manager</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="python" name="python" value="python">
+                                        <input type="radio" id="python" name="interestedField" value="python">
                                         <label for="python" class="fieldlabels">Python</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="react" name="react" value="react">
+                                        <input type="radio" id="react" name="interestedField" value="react">
                                         <label for="react" class="fieldlabels">React</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="sql" name="sql" value="sql">
+                                        <input type="radio" id="sql" name="interestedField" value="sql">
                                         <label for="sql" class="fieldlabels">SQL - Pl/Sql Oracle/MsSql</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="sales" name="sales" value="sales">
+                                        <input type="radio" id="sales" name="interestedField" value="sales">
                                         <label for="sales" class="fieldlabels">Sales</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="softwareDevelopment" name="softwareDevelopment" value="softwareDevelopment">
+                                        <input type="radio" id="softwareDevelopment" name="interestedField" value="softwareDevelopment">
                                         <label for="softwareDevelopment" class="fieldlabels">Software Development</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="testing" name="testing" value="testing">
+                                        <input type="radio" id="testing" name="interestedField" value="testing">
                                         <label for="testing" class="fieldlabels">Testing</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="uiDesigner" name="uiDesigner" value="uiDesigner">
+                                        <input type="radio" id="uiDesigner" name="interestedField" value="uiDesigner">
                                         <label for="uiDesigner" class="fieldlabels">UI Designer (Figma, etc)</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="webDevelopment" name="webDevelopment" value="webDevelopment">
+                                        <input type="radio" id="webDevelopment" name="interestedField" value="webDevelopment">
                                         <label for="webDevelopment" class="fieldlabels">Web Development</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="other" name="other" value="other">
+                                        <input type="radio" id="other" name="interestedField" value="other">
                                         <label for="other" class="fieldlabels">Others</label>
                                     </div>
-                                    <div class="input-field radio-field">
-                                        <input type="text" name="other" value="">
+                                    <div class="input-field radio-field mb-0">
+                                        <input type="text" name="otherText" id="otherText" style="display: none;">
+                                        <div class="error-message interestedField-error-message"></div>
                                     </div>
                                 </div>
                             </div>
@@ -349,8 +356,8 @@
                                     <label class="fieldlabels">You are comfortable working on Real-time Tasks from Day on the Above chosen Option, as we don't give training or coaching like a training institute or coaching center.</label>
                                 </div>
                             </div>
-                        </div> 
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="button" name="next" class="next action-button site-btn" value="Next" />
                     </fieldset>
                     <fieldset>
@@ -415,26 +422,30 @@
                                             <input type="radio" id="sixMonth" name="month" value="sixMonth">
                                             <label for="sixMonth" class="fieldlabels">6 Month</label>
                                         </div>
-                                        <div>
-                                            <input type="radio" id="otherMonth" name="month" value="otherMonth">
-                                            <label for="otherMonth" class="fieldlabels">Other</label>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
                                             <div class="input-field radio-field">
-                                                <input type="text" name="other" value="">
+                                                <input type="radio" id="others" name="month" value="others">
+                                                <label for="others" class="fieldlabels">Other</label>
+                                            </div>
+                                            <div class="input-field radio-field mb-0">
+                                                <input type="text" name="otherMonthText" id="otherMonthText" style="display: none;">
+                                                <div class="error-message month-error-message"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row py-70">
+                            <div class="row py-40">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Tentative Internship Start Date<span>*</span></label>
                                         <input type="date" name="date" placeholder="" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                             </div>
                         </div> 
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="button" name="next" class="next action-button site-btn" value="Next" />
                     </fieldset>
                     <fieldset>
@@ -445,6 +456,7 @@
                                     <div class="input-field">
                                         <label class="fieldlabels">How You know about the Internship in KGE Technologies Pvt Ltd <span>*</span></label>
                                         <input type="text" name="about" placeholder="" value="" required />
+                                        <div class="error-message"></div>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +470,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="button" name="next" class="next action-button site-btn" value="Next" />
                     </fieldset>
                     <fieldset>
@@ -468,9 +480,9 @@
                                 <div class="col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Terms and Conditions <span>*</span></label>
-                                        <textarea rows="5" class="mb-3">I Agree, that KGE Technologies Pvt Ltd contact me via Email, Call, SMS, and WhatsApp to discuss my Form Submission for the Internship</textarea>
+                                        <textarea rows="5" class="mb-3" disabled>I Agree, that KGE Technologies Pvt Ltd contact me via Email, Call, SMS, and WhatsApp to discuss my Form Submission for the Internship</textarea>
                                         <div>
-                                            <input type="checkbox" id="acceptTandC" name="acceptTandC" value="acceptTandC" class="w-auto">
+                                            <input type="checkbox" id="acceptTandC" name="acceptTandC" value="" class="w-auto" required>
                                             <label for="acceptTandC"> I accept the Terms and Conditions.</label>
                                         </div>
                                     </div>
@@ -485,7 +497,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="submit" name="submit" class=" action-button site-btn d-block text-center float-none mx-auto" value="SUBMIT" />
                     </fieldset>
                 </form>

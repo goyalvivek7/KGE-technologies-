@@ -49,6 +49,9 @@
 	}
 }
 @media only screen and (max-width: 991px) {
+	#certificateform input {
+		margin-block-end: 30px;
+	}
 	.heading-main {
 	    font-size: 30px;
 	    line-height: normal;
