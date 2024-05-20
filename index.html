@@ -36,7 +36,7 @@
                                 <li><a href="certificate.html" class="site-btn">Download</a></li>
                             </ul>
                         </nav>
-                        <button class="mobile-toggle-btn"><i class="fa fa-bars"></i></button>
+                        <button class="mobile-toggle-btn"><img src="img/hamburger-menu.svg" alt="hamburger-menu"></button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                     </ul>
                 </nav>
             </div>
-            <button class="close-btn mobile-toggle-btn active"><i class="fa fa-close"></i></button>
+            <button class="close-btn mobile-toggle-btn active"><img src="img/close_menu.svg" alt="close_menu"></button>
         </div>
     </header>
 
@@ -76,14 +76,14 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels" for="fname">First Name <span>*</span></label>
-                                        <input type="text" name="fname" placeholder="First Name" value="" required />
+                                        <input type="text" name="fname" placeholder="First Name" value="" required maxlength="20" />
                                         <div class="error-message"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Last Name <span>*</span></label>
-                                        <input type="text" name="lname" placeholder="Last Name" value="" required/>
+                                        <input type="text" name="lname" placeholder="Last Name" value=""  maxlength="20" required/>
                                         <div class="error-message"></div>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="input-field">
                                         <label class="fieldlabels">Passed Out <span>*</span></label>
-                                        <input type="text" name="passedOut" placeholder="" value="" required/>
+                                        <input type="text" name="passedOut" placeholder="Enter Pass Out Year" value="" required/>
                                         <div class="error-message"></div>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="netMVC" name="interestedField" value="netMVC">
+                                        <input type="radio" id="netMVC" name="interestedField" value="netMVC" checked>
                                         <label for="netMVC" class="fieldlabels">.Net MVC</label>
                                     </div>
                                 </div>
@@ -357,6 +357,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="interestedField-error-message"></div>
                         <input type="button" name="previous" class="previous action-button-previous" value="Back" />
                         <input type="button" name="next" class="next action-button site-btn" value="Next" />
                     </fieldset>
@@ -381,7 +382,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="input-field radio-field">
-                                        <input type="radio" id="cantpay" name="pay" value="cantpay">
+                                        <input type="radio" id="cantpay" name="pay" value="cantpay" checked>
                                         <label for="cantpay" class="fieldlabels">I Cannot Pay</label>
                                     </div>
                                 </div>
@@ -391,6 +392,7 @@
                                         <label for="canpay" class="fieldlabels">I Can Pay and take Internship</label>
                                     </div>
                                 </div>
+                                <div class="interestedField-error-message"></div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
@@ -399,7 +401,7 @@
                                 <div class="col-12">
                                     <div class="input-field radio-field justify-content-between">
                                         <div>
-                                            <input type="radio" id="oneMonth" name="month" value="oneMonth">
+                                            <input type="radio" id="oneMonth" name="month" value="oneMonth" checked>
                                             <label for="oneMonth" class="fieldlabels">1 Month</label>
                                         </div>
                                         <div>
@@ -434,6 +436,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="interestedField-error-message"></div>
                             </div>
                             <div class="row py-40">
                                 <div class="col-md-6 col-sm-12">

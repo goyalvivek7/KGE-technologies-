@@ -78,7 +78,6 @@ $(document).ready(function() {
 
         // Find the first empty required field
         current_fs.find("input[required], select[required]").each(function() {
-            var selectedRadios = $("input[type='radio']:checked").length;
             if ($(this).val() === "") {
                 isValid = false;
                 $(this).addClass("error"); // Add error class to highlight empty required field
@@ -100,6 +99,64 @@ $(document).ready(function() {
                         $(this).addClass("error"); // Add error class to highlight invalid phone number
                         $(this).next(".error-message").text("Invalid phone number format"); // Show error message
                         return false; // Exit the loop when invalid phone number is found
+                    }
+                }
+                else if ($(this).attr("name") === "zipCode") { // Check if it's a zip code input
+                    var zipPattern = /^[0-9]+$/; // Regular expression for numeric input
+                    if (!zipPattern.test($(this).val())) { // Check if input is numeric
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid zip code
+                        $(this).next(".error-message").text("Only numeric value allowed"); // Show error message
+                        return false; // Exit the loop when invalid zip code is found
+                    }
+                    else if ($(this).val().length !== 6) { // Check if input length is within the specified range
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid input length
+                        $(this).next(".error-message").text("Input length should be 6 characters"); // Show error message
+                        return false; // Exit the loop when invalid input length is found
+                    }
+                }
+                else if ($(this).attr("name") === "passedOut") { // Check if it's a passedOut code input
+                    var passedOutPattern = /^[0-9]+$/; // Regular expression for numeric input
+                    if (!passedOutPattern.test($(this).val())) { // Check if input is numeric
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid passedOut code
+                        $(this).next(".error-message").text("Only numeric value allowed"); // Show error message
+                        return false; // Exit the loop when invalid passedOut code is found
+                    }
+                    else if ($(this).val().length !== 4 || parseInt($(this).val()) < 2000) { // Check if input length is within the specified range
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid input length
+                        $(this).next(".error-message").text("Enter a value greater than or equal to 2000"); // Show error message
+                        return false; // Exit the loop when invalid input length is found
+                    }
+                }
+                else if ($(this).attr("name") === "country" || $(this).attr("name") === "city") { // Check if it's country or city input
+                    var alphaPattern = /^[A-Za-z\s]+$/; // Regular expression for alphabetic input
+                    if (!alphaPattern.test($(this).val())) { // Check if input is alphabetic
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid input
+                        $(this).next(".error-message").text("Only alphabetic characters allowed"); // Show error message
+                        return false; // Exit the loop when invalid input is found
+                    } else if ($(this).val().length < 3 || $(this).val().length > 20) { // Check if input length is within the specified range
+                        isValid = false;
+                        $(this).addClass("error"); // Add error class to highlight invalid input length
+                        $(this).next(".error-message").text("Input length should be between 3 and 20 characters"); // Show error message
+                        return false; // Exit the loop when invalid input length is found
+                    }
+                }
+                else if ($(this).attr("name") === "degree") { // Check if it's degree  or city input
+                    var degree = $(this).val().toLowerCase(); // Get the value of the degree field in lowercase
+                    if (degree.length >= 3) {
+                        for (var i = 0; i < degree.length; i++) {
+                            if (degree[i] === degree[i + 1] && degree[i + 1] === degree[i + 2]) {
+                                isValid = false;
+                                console.log("dscs b jsdbj");
+                                $(this).addClass("error"); // Add error class to highlight repeated letters
+                                $(this).next(".error-message").text("Please avoid repeating 3 consecutive letters"); // Show error message
+                                return false; // Exit the loop when repeated letters are found
+                            }
+                        }
                     }
                 }
                 $(this).removeClass("error"); // Remove error class if field is filled
@@ -183,10 +240,12 @@ $(document).ready(function() {
     })
 });
 
-document.getElementById("msform").addEventListener("submit", function(event) {
-    // Prevent the form from submitting normally
-    event.preventDefault();
+$(document).ready(function() {
+    $('#msform').submit(function(event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
 
-    // Redirect to the thank you page after form submission
-    window.location.href = "thank-you.html";
+        // Redirect to the thank you page after form submission
+        window.location.href = "thank-you.html";
+    });
 });

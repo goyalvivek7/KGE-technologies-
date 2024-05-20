@@ -185,6 +185,11 @@ header button.mobile-toggle-btn {
     border-radius: 4px;
     display: none;
     float: right;
+    width: 38px;
+    height: 38px;
+}
+button.mobile-toggle-btn img {
+    display: block;
 }
 .site-btn {
     padding: 14px 62px;
