@@ -103,6 +103,40 @@
 	header .logo a img {
 	    height: 40px;
 	}
+	#progressbar li:before {
+		border-radius: 0 !important;
+	}
+	#progressbar li span {
+		opacity: 0;
+		height: 1px;
+		display: block;
+	}
+	#progressbar li.active:before {
+	    width: 54px;
+	    height: 54px;
+	    filter: none;
+	}
+	#progressbar li#personalDetails:before {
+		background-image: url(../img/personal-details.png);
+	}
+	#progressbar li#educationalDetails:before {
+		background-image: url(../img/educational-details.png);
+	}
+	#progressbar li#internshipInterested:before {
+		background-image: url(../img/internship-interested.png);
+	}
+	#progressbar li#internshipOption:before {
+		background-image: url(../img/internship-option.png);
+	}
+	#progressbar li#references:before {
+		background-image: url(../img/references.png);
+	}
+	#progressbar li#submission:before {
+		background-image: url(../img/submission.png);
+	}
+	#progressbar li:before {
+		filter: grayscale(100%);
+	}
 }
 @media only screen and (max-width: 480px) {
 	#progressbar li {
